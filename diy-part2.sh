@@ -12,3 +12,9 @@
 
 # Modify default IP
 #sed -i 's/192.168.1.1/192.168.50.5/g' package/base-files/files/bin/config_generate
+git clone https://github.com/ElonH/Rclone-OpenWrt.git package/rclone
+git clone https://github.com/project-openwrt/luci-app-koolproxyR.git package/koolproxyR
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git package/unblockneteasemusicadvance
+git clone https://github.com/xiaorouji/openwrt-package.git package/xiaorouji
+git clone https://github.com/Leo-Jo-My/luci-theme-opentomcat.git package/luci-theme-opentomcat
