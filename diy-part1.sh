@@ -15,3 +15,18 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+sed -i '$a src-git jerryk https://github.com/jerrykuku/openwrt-package' feeds.conf.default
+
+./scripts/feeds clean
+./scripts/feeds update -a
+./scripts/feeds install -a
+
+rm -rf package/lean/luci-app-rclone
+rm -rf package/lean/rclone-ng
+rm -rf package/lean/rclone-webui-react
+rm -rf package/lean/rclone
+
+svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/net/smartdns	
+
+rm -rf feeds/packages/net/https-dns-proxy
+svn co https://github.com/Lienol/openwrt-packages/trunk/net/https-dns-proxy feeds/packages/net/https-dns-proxy
