@@ -31,6 +31,14 @@ rm -rf package/lean/v2ray-plugin
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray-plugin package/lean/v2ray-plugin
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray package/lean/v2ray
 
+rm -rf package/lean/luci-app-unblockmusic
+rm -rf package/lean/UnblockNeteaseMusic
+rm -rf package/lean/UnblockNeteaseMusicGo
+
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusicGo package/lean/luci-app-unblockmusic
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusic package/lean/UnblockNeteaseMusic
+svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusicGo package/lean/UnblockNeteaseMusicGo
+
 rm -rf feeds/packages/net/smartdns
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/net/smartdns	
 
