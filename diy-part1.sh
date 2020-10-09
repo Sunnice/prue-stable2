@@ -26,6 +26,11 @@ rm -rf package/lean/rclone-ng
 rm -rf package/lean/rclone-webui-react
 rm -rf package/lean/rclone
 
+rm -rf package/lean/v2ray
+rm -rf package/lean/v2ray-plugin
+svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray-plugin package/lean/v2ray-plugin
+svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray package/lean/v2ray
+
 rm -rf feeds/packages/net/smartdns
 svn co https://github.com/Lienol/openwrt-packages/trunk/net/smartdns package/net/smartdns	
 
