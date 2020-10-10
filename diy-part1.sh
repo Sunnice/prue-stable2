@@ -26,6 +26,8 @@ rm -rf package/lean/rclone-ng
 rm -rf package/lean/rclone-webui-react
 rm -rf package/lean/rclone
 
+rm -rf package/lean/v2ray-plugin
+rm -rf package/lean/v2ray
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray-plugin package/lean/v2ray-plugin
 svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray package/lean/v2ray
 
