@@ -28,8 +28,8 @@ rm -rf package/lean/rclone
 
 rm -rf package/lean/v2ray-plugin
 rm -rf package/lean/v2ray
-svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray-plugin package/lean/v2ray-plugin
-svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray package/lean/v2ray
+svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray-plugin package/v2ray-plugin
+svn co https://github.com/xiaorouji/openwrt-package/trunk/package/v2ray package/v2ray
 
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusicGo package/luci-app-unblockmusic
 svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/UnblockNeteaseMusic package/UnblockNeteaseMusic
